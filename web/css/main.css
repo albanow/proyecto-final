@@ -1,0 +1,44 @@
+.myLogin {
+    padding-top:100px;
+}
+
+.list-cust .list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.list-cust .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.list-cust .list-group-item {
+    border-right:0px;
+    border-left:0px;
+}
+.list-group :not(:first-child) {
+    background-color: #EEE;
+
+}
+
+.pad-top {
+    padding-top:100px;
+    
+}
+
+.error {
+    font-size:100px;
+    padding-bottom:20px;
+    font-weight:900;
+}
+.incorrect {
+    text-transform:uppercase;
+    font-size:40px;
+     padding-bottom:40px;
+}
+
+th {
+    background-color: gray;
+    color: black;
+} 
+
+

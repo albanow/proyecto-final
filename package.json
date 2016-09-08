@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "final projecto for the java class (diplomado)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Albano Pena",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-final",
+  "description": "final projecto for the java class (diplomado)",
+  "main": "index.js",
+  "authors": [
+    "Albano Pena"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
