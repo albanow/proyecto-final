@@ -1,9 +1,20 @@
 package com.models;
 
-public class Puesto {
+import java.io.Serializable;
+
+public class Puesto implements Serializable {
 
     private String idPuesto;
     private String nombrePuesto;
+    private String minSalario;
+    private String maxSalario;
+
+    public Puesto(String idPuesto, String nombrePuesto, String minSalario, String maxSalario) {
+        this.idPuesto = idPuesto;
+        this.nombrePuesto = nombrePuesto;
+        this.minSalario = minSalario;
+        this.maxSalario = maxSalario;
+    }
 
     public Puesto(String idPuesto, String nombrePuesto) {
         this.idPuesto = idPuesto;
@@ -24,6 +35,22 @@ public class Puesto {
 
     public void setNombrePuesto(String nombrePuesto) {
         this.nombrePuesto = nombrePuesto;
+    }
+
+    public String getMinSalario() {
+        return minSalario;
+    }
+
+    public void setMinSalario(String minSalario) {
+        this.minSalario = minSalario;
+    }
+
+    public String getMaxSalario() {
+        return maxSalario;
+    }
+
+    public void setMaxSalario(String maxSalario) {
+        this.maxSalario = maxSalario;
     }
 
 }

@@ -29,6 +29,34 @@
         <servlet-name>ObtenerEmpleado</servlet-name>
         <servlet-class>com.controllers.ObtenerEmpleado</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PuestosDepartamentos</servlet-name>
+        <servlet-class>com.controllers.PuestosDepartamentos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AgregarEmpleado</servlet-name>
+        <servlet-class>com.controllers.AgregarEmpleado</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenDepartamentos</servlet-name>
+        <servlet-class>com.controllers.ObtenDepartamentos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenerDepartamento</servlet-name>
+        <servlet-class>com.controllers.ObtenerDepartamento</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditarDepartamento</servlet-name>
+        <servlet-class>com.controllers.EditarDepartamento</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenEmpleadosDepartamento</servlet-name>
+        <servlet-class>com.controllers.ObtenEmpleadosDepartamento</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenerPuestos</servlet-name>
+        <servlet-class>com.controllers.ObtenerPuestos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ValidaAcceso</servlet-name>
         <url-pattern>/ValidaAcceso</url-pattern>
@@ -48,6 +76,34 @@
     <servlet-mapping>
         <servlet-name>ObtenerEmpleado</servlet-name>
         <url-pattern>/ObtenerEmpleado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PuestosDepartamentos</servlet-name>
+        <url-pattern>/PuestosDepartamentos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarEmpleado</servlet-name>
+        <url-pattern>/AgregarEmpleado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenDepartamentos</servlet-name>
+        <url-pattern>/ObtenDepartamentos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerDepartamento</servlet-name>
+        <url-pattern>/ObtenerDepartamento</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarDepartamento</servlet-name>
+        <url-pattern>/EditarDepartamento</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenEmpleadosDepartamento</servlet-name>
+        <url-pattern>/ObtenEmpleadosDepartamento</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerPuestos</servlet-name>
+        <url-pattern>/ObtenerPuestos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

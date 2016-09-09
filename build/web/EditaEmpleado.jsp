@@ -23,12 +23,13 @@
         <div class="container myLogin">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <form class="form-horizontal" action="EditaEmpleado" method="POST">
-                        id: 
-                        <input type="text"
+                    <form class="form-horizontal" action="EditarEmpleado" method="POST">
+                         
+                        <input type="hidden"
                                class="form-control"
                                name="idEmpleado"
-                               value="<c:out value="${sessionScope.singleEmpleado.idEmpleado}"/>"><br>
+                               value="<c:out value="${sessionScope.singleEmpleado.idEmpleado}"/>"
+                               readonly><br>
                         Nombre: 
                         <input type="text" 
                                class="form-control"
@@ -66,7 +67,7 @@
                             </c:forEach>
                         </select><br>
                         <input type="submit" class="btn btn-success" value="Actualizar">
-                        <a href="MuestraEmpleados.jsp" class="btn btn-danger" role="button">Cancelar</a>
+                        <a href="Empleados" class="btn btn-danger" role="button">Cancelar</a>
                     </form>
                     
                 </div>

@@ -21,8 +21,8 @@
                     <div class="col-md-4">
                         <div class="list-group">
                             <a href="Empleados" class="list-group-item">Empleados</a>
-                            <a href="#" class="list-group-item">Departamentos</a>
-                            <a href="#" class="list-group-item">Puestos</a>
+                            <a href="ObtenDepartamentos" class="list-group-item">Departamentos</a>
+                            <a href="ObtenerPuestos" class="list-group-item">Puestos</a>
                             <a href="#" class="list-group-item">Ubicacion</a>
                         </div>
                     </div>

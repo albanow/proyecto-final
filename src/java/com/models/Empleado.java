@@ -1,6 +1,8 @@
 package com.models;
 
-public class Empleado {
+import java.io.Serializable;
+
+public class Empleado implements Serializable{
     
     private String idEmpleado;
     private String nombre; 
@@ -10,6 +12,9 @@ public class Empleado {
     private String nombrePuesto;
     private String email;
     private String departamento;
+
+    public Empleado() {
+    }
 
     public Empleado(String idEmpleado, String nombre, String apellido, String fechaContratacion, String idPuesto, String nombrePuesto, String email, String departamento) {
         this.idEmpleado = idEmpleado;

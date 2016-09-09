@@ -3,13 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/diplomado.sql</file>
-            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/src/java/com/controllers/ObtenerEmpleado.java</file>
-            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/web/EditaEmpleado.jsp</file>
-            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/web/MuestraEmpleados.jsp</file>
-            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/src/java/com/models/Departamento.java</file>
-            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/src/java/com/models/Empleado.java</file>
-            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/src/java/com/controllers/EditarEmpleado.java</file>
+            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/src/java/com/controllers/ObtenDepartamentos.java</file>
+            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/src/java/com/controllers/EditarDepartamento.java</file>
+            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/web/MuestraDepartamentos.jsp</file>
+            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/src/java/com/controllers/ObtenEmpleadosDepartamento.java</file>
+            <file>file:/home/albano/Documents/javaDiplomado/javaprojects/ProyectoFinal/web/DepartamentoSeleccionado.jsp</file>
         </group>
     </open-files>
 </project-private>

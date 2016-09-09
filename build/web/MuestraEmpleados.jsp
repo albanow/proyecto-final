@@ -13,60 +13,73 @@
         <title>Empleados</title>
     </head>
     <body>
-        
+
         <% ArrayList<Empleado> empleados = (ArrayList<Empleado>) session.getAttribute("empleados");
         %>
-        <table class="table table-bordered table-hover table-condensed">
-            <thead>
-                <tr>
-                    <th><strong>Nombre (completo)</strong></th>
-                    <th>Fecha Contratacion</th>
-                    <th>Puesto (id + nombre)</th>
-                    <th>Email</th>
-                    <th>Departamento</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <c:forEach var="employees" items="${empleados}">
+
+        <div class="container myLogin" >
+            <a href="Principal.jsp" class='btn btn-primary' role='button'>
+                Principal <span class='glyphicon glyphicon-home' aria-hidden='true'></span>
+            </a>
+            <a href="PuestosDepartamentos" class='btn btn-primary' role='button'>
+                Agregar Empleado <span class='glyphicon glyphicon-plus-sign' aria-hidden='true'></span>
+            </a>
+        </div><br>
+
+        <div class="container">
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
                     <tr>
-                        <td>
-                            <c:out value="${employees.getNombre()}"/> <c:out value="${employees.getApellido()}"/>
-                        </td>
-                        <td>
-                            <c:out value="${employees.getFechaContratacion()}"/>
-                        </td>
-                        <td> 
-                            <c:out value="${employees.getIdPuesto()}"/> <c:out value="${employees.getNombrePuesto()}"/> 
-                        </td>
-                        <td> 
-                            <c:out value="${employees.getEmail()}" /> 
-                        </td>
-                        <td> 
-                            <c:out value="${employees.getDepartamento()}" /> 
-                        </td>
-                        <td>
-                            <a href="http://localhost:8084/ProyectoFinal/EliminaEmpleado?idEmpleado=<c:out value="${employees.getIdEmpleado()}"/>" 
-                               class='btn btn-danger' 
-                               role='button' 
-                               onclick="return confirm('Eliminar empleado?')">
-                                Eliminar <span class='glyphicon glyphicon-remove' aria-hidden='true'></span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="http://localhost:8084/ProyectoFinal/ObtenerEmpleado?idEmpleado=<c:out value="${employees.getIdEmpleado()}"/>" 
-                               class='btn btn-primary' 
-                               role='button'>
-                                Editar <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>
-                            </a>
-                        </td>
+                        <th><strong>Nombre (completo)</strong></th>
+                        <th>Fecha Contratacion</th>
+                        <th>Puesto (id + nombre)</th>
+                        <th>Email</th>
+                        <th>Departamento</th>
+                        <th></th>
+                        <th></th>
                         
                     </tr>
-                </c:forEach>
+                </thead>
+                <tbody>
+                    <c:forEach var="employees" items="${empleados}">
+                        <tr>
+                            <td>
+                                <c:out value="${employees.getNombre()}"/> <c:out value="${employees.getApellido()}"/>
+                            </td>
+                            <td>
+                                <c:out value="${employees.getFechaContratacion()}"/>
+                            </td>
+                            <td> 
+                                <c:out value="${employees.getIdPuesto()}"/> <c:out value="${employees.getNombrePuesto()}"/> 
+                            </td>
+                            <td> 
+                                <c:out value="${employees.getEmail()}" /> 
+                            </td>
+                            <td> 
+                                <c:out value="${employees.getDepartamento()}" /> 
+                            </td>
+                            <td>
+                                <a href="EliminaEmpleado?idEmpleado=<c:out value="${employees.getIdEmpleado()}"/>" 
+                                   class='btn btn-danger' 
+                                   role='button' 
+                                   onclick="return confirm('Eliminar empleado?')">
+                                    Eliminar <span class='glyphicon glyphicon-remove' aria-hidden='true'></span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="ObtenerEmpleado?idEmpleado=<c:out value="${employees.getIdEmpleado()}"/>" 
+                                   class='btn btn-primary' 
+                                   role='button'>
+                                    Editar <span class='glyphicon glyphicon-pencil' aria-hidden='true'></span>
+                                </a>
+                            </td>
 
-            </tbody>
-        </table>
+                        </tr>
+                    </c:forEach>
+
+                </tbody>
+            </table>
+        </div>
+
     </body>
 </html>
