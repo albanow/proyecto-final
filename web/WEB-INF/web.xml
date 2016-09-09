@@ -57,6 +57,22 @@
         <servlet-name>ObtenerPuestos</servlet-name>
         <servlet-class>com.controllers.ObtenerPuestos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ObtenHistorialPuestos</servlet-name>
+        <servlet-class>com.controllers.ObtenHistorialPuestos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenerUbicaciones</servlet-name>
+        <servlet-class>com.controllers.ObtenerUbicaciones</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenDepartamentosUbicacion</servlet-name>
+        <servlet-class>com.controllers.ObtenDepartamentosUbicacion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenerPuestoEmpleados</servlet-name>
+        <servlet-class>com.controllers.ObtenerPuestoEmpleados</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ValidaAcceso</servlet-name>
         <url-pattern>/ValidaAcceso</url-pattern>
@@ -104,6 +120,22 @@
     <servlet-mapping>
         <servlet-name>ObtenerPuestos</servlet-name>
         <url-pattern>/ObtenerPuestos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenHistorialPuestos</servlet-name>
+        <url-pattern>/ObtenHistorialPuestos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerUbicaciones</servlet-name>
+        <url-pattern>/ObtenerUbicaciones</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenDepartamentosUbicacion</servlet-name>
+        <url-pattern>/ObtenDepartamentosUbicacion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerPuestoEmpleados</servlet-name>
+        <url-pattern>/ObtenerPuestoEmpleados</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

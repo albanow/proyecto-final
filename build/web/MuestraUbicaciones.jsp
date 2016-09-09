@@ -1,7 +1,7 @@
-<%@page import="java.util.ArrayList"%>
-<%@page import="com.models.Puesto"%>
-
+<%@page import="java.util.ArrayList" %>
+<%@page import="com.models.Ubicacion" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,11 +11,11 @@
         <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="libs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
-        <title>Mostrar puestos</title>
+        <title>Ubicaciones</title>
     </head>
     <body>
         <%
-            ArrayList<Puesto> jobss = (ArrayList<Puesto>) session.getAttribute("jobss");
+            ArrayList<Ubicacion> locations = (ArrayList<Ubicacion>) session.getAttribute("locations");
         %>
         <div class="container myLogin" >
             <a href="Principal.jsp" class='btn btn-primary' role='button'>
@@ -26,31 +26,44 @@
             <table class="table table-bordered table-hover table-condensed">
                 <thead>
                     <tr>
-                        <th>Puesto</th>
-                        <th>Salario minimo</th>
-                        <th>Salario maximo</th>
+                        <th>Calle</th>
+                        <th>Codigo Postal</th>
+                        <th>Ciudad</th>
+                        <th>Estado</th>
+                        <th>Pais</th>
+                        <th>Region</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <c:forEach var="puesto" items="${jobss}">
+                    <c:forEach var="loc" items="${locations}">
                         <tr>
                             <td>
-                                <a href="ObtenerPuestoEmpleados?idPuesto=<c:out value="${puesto.getIdPuesto()}"/>">
-                                    <c:out value="${puesto.getIdPuesto()}"/> <c:out value="${puesto.getNombrePuesto()}"/>
+                                <a href="ObtenDepartamentosUbicacion?idUbicacion=<c:out value="${loc.getIdUbicacion()}"/>">
+                                    <c:out value="${loc.getIdUbicacion()}"/> - <c:out value="${loc.getCalle()}"/>
                                 </a>
+                                
                             </td>
                             <td>
-                                $ <c:out value="${puesto.getMinSalario()}"/>
+                                <c:out value="${loc.getCp()}"/>
                             </td>
                             <td>
-                                $ <c:out value="${puesto.getMaxSalario()}" />
+                                <c:out value="${loc.getCiudad()}"/>
                             </td>
-                    </tr>
+                            <td>
+                                <c:out value="${loc.getEstado()}"/>
+                            </td>
+                            <td>
+                                <c:out value="${loc.getIdPais()}"/>
+                            </td>
+                            <td>
+                                <c:out value="${loc.getNombrePais()}"/>
+                            </td>
+                        </tr>
                     </c:forEach>
+
                 </tbody>
             </table>
+
         </div>
-
-
     </body>
 </html>

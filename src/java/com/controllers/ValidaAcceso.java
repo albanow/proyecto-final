@@ -2,7 +2,6 @@ package com.controllers;
 
 import com.database.DBUtil;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.Types;
@@ -33,9 +32,9 @@ public class ValidaAcceso extends HttpServlet {
             String validacion = stmt.getString(1);
 
             if (validacion.equals("OK")) {
-                response.sendRedirect("http://localhost:8084/ProyectoFinal/Principal.jsp");
+                response.sendRedirect("Principal.jsp");
             } else {
-                response.sendRedirect("http://localhost:8084/ProyectoFinal/ErrorLogin.jsp");
+                response.sendRedirect("ErrorLogin.jsp");
 
             }
         } 

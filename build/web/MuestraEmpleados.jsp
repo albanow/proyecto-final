@@ -44,7 +44,9 @@
                     <c:forEach var="employees" items="${empleados}">
                         <tr>
                             <td>
-                                <c:out value="${employees.getNombre()}"/> <c:out value="${employees.getApellido()}"/>
+                                <a href="ObtenHistorialPuestos?idEmpleado=<c:out value="${employees.getIdEmpleado()}"/>">
+                                    <c:out value="${employees.getNombre()}"/> <c:out value="${employees.getApellido()}"/>
+                                </a>
                             </td>
                             <td>
                                 <c:out value="${employees.getFechaContratacion()}"/>

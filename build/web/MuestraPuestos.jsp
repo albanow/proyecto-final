@@ -35,7 +35,9 @@
                     <c:forEach var="puesto" items="${jobss}">
                         <tr>
                             <td>
-                                <c:out value="${puesto.getIdPuesto()}"/> <c:out value="${puesto.getNombrePuesto()}"/>
+                                <a href="ObtenerPuestoEmpleados?idPuesto=<c:out value="${puesto.getIdPuesto()}"/>">
+                                    <c:out value="${puesto.getIdPuesto()}"/> <c:out value="${puesto.getNombrePuesto()}"/>
+                                </a>
                             </td>
                             <td>
                                 $ <c:out value="${puesto.getMinSalario()}"/>
